@@ -9,12 +9,12 @@ export function SectionHeading({ index, title, kicker }) {
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
       className="mb-14 max-w-3xl"
     >
-      <div className="flex items-center gap-3 text-xs font-mono font-bold text-primary mb-4">
+      <div className="mb-4 flex items-center gap-3 text-xs font-mono font-semibold text-primary">
         <span className="rounded-full border border-white/20 bg-white/5 px-2 py-1 text-white">{index}</span>
         <span className="h-px w-10 bg-white/30" />
         <span className="uppercase tracking-[0.28em] text-muted-foreground">{kicker}</span>
       </div>
-      <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tighter text-foreground">
+      <h2 className="font-display text-4xl font-semibold tracking-tighter text-foreground sm:text-5xl lg:text-6xl">
         {title}
       </h2>
     </motion.div>

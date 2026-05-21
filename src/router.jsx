@@ -18,6 +18,7 @@ import { Education } from "@/components/portfolio/Education";
 import { Experience } from "@/components/portfolio/Experience";
 import { Projects } from "@/components/portfolio/Projects";
 import { Contact } from "@/components/portfolio/Contact";
+import { IcopeProjectPage } from "@/components/portfolio/IcopeProjectPage";
 
 function DefaultErrorComponent({ error, reset }) {
   const router = useRouter();
@@ -132,7 +133,7 @@ const rootRoute = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Archana Srikanth â€” Full Stack Developer" },
+      { title: "Archana Srikanth | Full Stack Developer" },
       {
         name: "description",
         content:
@@ -169,7 +170,13 @@ const indexRoute = createRoute({
   component: Index,
 });
 
-const routeTree = rootRoute.addChildren([indexRoute]);
+const projectDetailRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: "/projects/$slug",
+  component: IcopeProjectPage,
+});
+
+const routeTree = rootRoute.addChildren([indexRoute, projectDetailRoute]);
 
 export const getRouter = () => {
   const router = createRouter({
