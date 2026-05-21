@@ -1,4 +1,4 @@
-// @lovable.dev/vite-tanstack-config already includes the following — do NOT add them manually
+// @lovable.dev/vite-tanstack-config already includes the following â€” do NOT add them manually
 // or the app will break with duplicate plugins:
 //   - tanstackStart, viteReact, tailwindcss, tsConfigPaths, cloudflare (build-only),
 //     componentTagger (dev-only), VITE_* env injection, @ path alias, React/TanStack dedupe,
@@ -7,6 +7,13 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
+  tanstackStart: {
+    router: {
+      generatedRouteTree: "./src/routeTree.gen.js",
+      disableTypes: true,
+      routeTreeFileFooter: [],
+    },
+  },
   vite: {
     base: process.env.GITHUB_PAGES === "1" ? "/cuddle-bug-factory-main/" : "/",
   },

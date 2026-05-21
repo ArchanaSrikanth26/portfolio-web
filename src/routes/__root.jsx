@@ -29,11 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Archana Srikanth — Full Stack Developer" },
-      { name: "description", content: "Portfolio of Archana Srikanth, a Full Stack Developer specializing in MERN, Spring Boot, Flutter, and AI-driven automation." },
+      { title: "Archana Srikanth â€” Full Stack Developer" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Archana Srikanth, a Full Stack Developer specializing in MERN, Spring Boot, Flutter, and AI-driven automation.",
+      },
       { name: "author", content: "Archana Srikanth" },
-      { property: "og:title", content: "Archana Srikanth — Full Stack Developer" },
-      { property: "og:description", content: "MERN · Java Spring Boot · Flutter · AI Automation. Building scalable products end-to-end." },
+      { property: "og:title", content: "Archana Srikanth â€” Full Stack Developer" },
+      {
+        property: "og:description",
+        content: "MERN Â· Java Spring Boot Â· Flutter Â· AI Automation. Building scalable products end-to-end.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
@@ -41,7 +48,10 @@ export const Route = createRootRoute({
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
+      },
       { rel: "stylesheet", href: appCss },
     ],
   }),
@@ -50,7 +60,7 @@ export const Route = createRootRoute({
   notFoundComponent: NotFoundComponent,
 });
 
-function RootShell({ children }: { children: React.ReactNode }) {
+function RootShell({ children }) {
   return (
     <html lang="en">
       <head>
