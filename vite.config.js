@@ -15,6 +15,6 @@ export default defineConfig({
     },
   },
   vite: {
-    base: process.env.GITHUB_PAGES === "1" ? "/cuddle-bug-factory-main/" : "/",
+    base: process.env.GITHUB_PAGES === "1" ? "/portfolio-web/" : "/",
   },
 });
