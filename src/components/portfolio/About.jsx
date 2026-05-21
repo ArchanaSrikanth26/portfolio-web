@@ -11,7 +11,7 @@ export function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="lg:col-span-3 space-y-5 text-lg text-muted-foreground leading-relaxed"
+          className="lg:col-span-3 space-y-5 text-base text-muted-foreground leading-relaxed"
         >
           <p>
             I'm a Full Stack Developer at <span className="text-foreground font-medium">CubenSquare</span>,
@@ -43,7 +43,7 @@ export function About() {
             <div className="space-y-4">
               <div>
                 <div className="text-sm text-primary font-mono">Aug 2024 — Present</div>
-                <div className="font-display font-semibold text-lg mt-1">Java Full Stack Developer</div>
+                <div className="font-display font-semibold text-base mt-1">Java Full Stack Developer</div>
                 <div className="text-sm text-muted-foreground">CubenSquare · On-site</div>
               </div>
               <div className="h-px bg-border" />

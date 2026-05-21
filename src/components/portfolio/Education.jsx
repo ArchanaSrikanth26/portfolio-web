@@ -13,16 +13,16 @@ export function Education() {
         className="max-w-3xl rounded-3xl border border-border glass p-6 sm:p-8 shadow-card-soft"
       >
         <div className="text-xs font-mono uppercase tracking-widest text-primary">2020 — 2024</div>
-        <h3 className="mt-3 font-display text-2xl sm:text-3xl font-bold tracking-tight">
+        <h3 className="mt-3 font-display text-xl sm:text-2xl font-bold tracking-tight">
           B.Tech, AI & Data Science
         </h3>
-        <div className="mt-2 text-sm text-muted-foreground">
+        <div className="mt-2 text-xs sm:text-sm text-muted-foreground">
           Arjun College of Technology · CGPA 8.4
         </div>
-        <p className="mt-5 text-muted-foreground leading-relaxed">
+        <p className="mt-5 text-sm text-muted-foreground leading-relaxed">
           Specialized in Artificial Intelligence and Data Science with a strong systems foundation.
         </p>
-        <p className="mt-3 text-muted-foreground leading-relaxed">
+        <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
           Certified in Full Stack Web Development (Udemy, Naan Mudhalvan) and MongoDB CRUD
           (MongoDB University).
         </p>

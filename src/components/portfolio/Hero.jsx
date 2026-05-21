@@ -46,13 +46,13 @@ export function Hero() {
             Available for opportunities · 2026
           </motion.div>
 
-          <motion.h1 variants={item} className="font-display font-semibold leading-[0.9] text-4xl sm:text-6xl lg:text-8xl tracking-tighter">
+          <motion.h1 variants={item} className="font-display font-semibold leading-[0.95] text-3xl sm:text-5xl lg:text-6xl tracking-tighter">
             Archana
             <br />
             <span className="text-primary">Srikanth.</span>
           </motion.h1>
 
-          <motion.p variants={item} className="mt-8 max-w-2xl text-lg sm:text-xl text-white leading-relaxed">
+          <motion.p variants={item} className="mt-8 max-w-2xl text-base sm:text-lg text-white leading-relaxed">
             Full Stack Developer crafting scalable web & mobile products with{" "}
             <span className="text-primary">MERN</span>,{" "}
             <span className="text-primary">Java Spring Boot</span>,{" "}
@@ -105,7 +105,7 @@ export function Hero() {
               { k: "8.4", v: "B.Tech CGPA" },
             ].map((s) => (
               <div key={s.v} className="bg-background/40 p-4 sm:p-0 sm:bg-transparent">
-                <div className="font-display text-3xl font-semibold text-primary sm:text-4xl">{s.k}</div>
+                <div className="font-display text-2xl font-semibold text-primary sm:text-3xl">{s.k}</div>
                 <div className="mt-1 text-xs sm:text-sm text-white/90">{s.v}</div>
               </div>
             ))}

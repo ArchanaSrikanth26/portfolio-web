@@ -36,11 +36,11 @@ export function Projects() {
                 <span className="text-xs font-mono font-bold uppercase tracking-widest text-primary">{p.tag}</span>
                   <ArrowUpRight className="relative z-20 h-5 w-5 text-white group-hover:text-primary group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
                 </div>
-                <h3 className="mb-4 font-display text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+                <h3 className="mb-4 font-display text-xl font-semibold tracking-tight text-white sm:text-2xl">
                   {p.name}
                 </h3>
                 <div className="h-px w-full bg-white mb-5" />
-                <p className="mb-3 font-medium leading-relaxed text-white/90">
+                <p className="mb-3 text-sm font-medium leading-relaxed text-white/90 sm:text-base">
                   {p.point}
                 </p>
                 <div className="mb-2 text-[11px] font-mono font-bold uppercase tracking-[0.24em] text-primary">

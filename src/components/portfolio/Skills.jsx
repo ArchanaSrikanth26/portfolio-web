@@ -160,7 +160,7 @@ export function Skills() {
                         <div className="text-[10px] font-mono uppercase tracking-[0.32em] text-primary/80 mb-2">
                           Category {String(i + 1).padStart(2, "0")}
                         </div>
-                        <h3 className="font-display text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+                        <h3 className="font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
                           {g.title}
                         </h3>
                       </div>
@@ -173,7 +173,7 @@ export function Skills() {
                       {g.items.map((s) => (
                         <div
                           key={s}
-                        className="flex items-center gap-3 rounded-2xl border border-white/20 bg-secondary/50 px-4 py-3 text-sm font-medium text-secondary-foreground/90 transition-colors hover:border-primary hover:text-primary sm:text-base"
+                          className="flex items-center gap-3 rounded-2xl border border-white/20 bg-secondary/50 px-4 py-3 text-xs font-medium text-secondary-foreground/90 transition-colors hover:border-primary hover:text-primary sm:text-sm"
                         >
                           <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary/20 bg-primary/8">
                             <SkillIcon skill={s} />

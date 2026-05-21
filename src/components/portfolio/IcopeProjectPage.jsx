@@ -143,7 +143,7 @@ export function IcopeProjectPage() {
     return (
       <main className="min-h-screen bg-background px-4 py-24 text-foreground">
         <div className="mx-auto max-w-3xl rounded-[1.5rem] border border-white/10 bg-card/80 p-8 text-center shadow-card-soft">
-          <h1 className="font-display text-4xl font-semibold text-primary">Project not found</h1>
+          <h1 className="font-display text-2xl font-semibold text-primary">Project not found</h1>
           <p className="mt-4 text-white/80">The project you requested does not exist.</p>
           <div className="mt-8">
             <Link
@@ -191,7 +191,7 @@ export function IcopeProjectPage() {
                 </span>
               </div>
 
-              <h1 className="max-w-3xl font-display text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
+              <h1 className="max-w-3xl font-display text-2xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
                 {project.name}
               </h1>
 

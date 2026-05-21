@@ -119,10 +119,16 @@ export const projects = [
       },
     ],
     techGroups: [
-      { title: "Mobile", items: ["Flutter (Dart)", "Responsive UI", "Push Notifications", "Google Maps API"] },
+      {
+        title: "Mobile",
+        items: ["Flutter (Dart)", "Responsive UI", "Push Notifications", "Google Maps API"],
+      },
       { title: "Backend", items: ["Node.js", "Express.js", "JWT Auth", "REST APIs"] },
       { title: "Data", items: ["MongoDB", "Firebase", "FCM", "Route Tracking"] },
-      { title: "Ops", items: ["Order Management", "Driver Tracking", "Map Routing", "Secure Login"] },
+      {
+        title: "Ops",
+        items: ["Order Management", "Driver Tracking", "Map Routing", "Secure Login"],
+      },
     ],
   },
   {
@@ -131,7 +137,15 @@ export const projects = [
     tag: "Super Admin & Vendor Panel | Aug 2025 - Oct 2025",
     point:
       "Developed a multi-vendor grocery platform with role-based dashboards for inventory, order, and driver management.",
-    stack: ["React.js", "Node.js", "Flutter (Dart)", "Google Maps API", "Firebase", "Razorpay", "JWT"],
+    stack: [
+      "React.js",
+      "Node.js",
+      "Flutter (Dart)",
+      "Google Maps API",
+      "Firebase",
+      "Razorpay",
+      "JWT",
+    ],
     artifactUrl: saasAdminPdf,
     artifactLabel: "Click here to view my project UI",
     badge: "SaaS Platform",
@@ -177,7 +191,10 @@ export const projects = [
       { title: "Admin", items: ["React.js", "Dashboard UI", "Role-Based Access", "Material UI"] },
       { title: "Mobile", items: ["Flutter (Dart)", "Google Maps API", "Firebase", "JWT"] },
       { title: "Backend", items: ["Node.js", "Express.js", "REST APIs", "Secure Auth"] },
-      { title: "Payments", items: ["Razorpay", "Order Processing", "Vendor Management", "Notifications"] },
+      {
+        title: "Payments",
+        items: ["Razorpay", "Order Processing", "Vendor Management", "Notifications"],
+      },
     ],
   },
   {
@@ -186,7 +203,17 @@ export const projects = [
     tag: "Production (Malaysia) | Apr 2025 - Jul 2025",
     point:
       "Built a role-based logistics platform with vehicle management, AI invoice generation, live GPS tracking, and Dockerized deployment.",
-    stack: ["Vite (React.js)", "Node.js (Express)", "MySQL", "Tailwind CSS", "Razorpay", "JWT", "Google Maps API", "Docker", "SMTP"],
+    stack: [
+      "Vite (React.js)",
+      "Node.js (Express)",
+      "MySQL",
+      "Tailwind CSS",
+      "Razorpay",
+      "JWT",
+      "Google Maps API",
+      "Docker",
+      "SMTP",
+    ],
     artifactUrl: null,
     artifactLabel: null,
     badge: "Production",
@@ -229,10 +256,16 @@ export const projects = [
       },
     ],
     techGroups: [
-      { title: "Frontend", items: ["React.js", "Tailwind CSS", "Role-Based UI", "Responsive Layout"] },
+      {
+        title: "Frontend",
+        items: ["React.js", "Tailwind CSS", "Role-Based UI", "Responsive Layout"],
+      },
       { title: "Backend", items: ["Node.js", "Express.js", "JWT Auth", "REST APIs"] },
       { title: "Data", items: ["MySQL", "Invoice Records", "Vehicle Tracking", "SMTP"] },
-      { title: "Ops", items: ["Docker", "Google Maps API", "Razorpay", "Production Deployment"] },
+      {
+        title: "Ops",
+        items: ["Docker", "Google Maps API", "Razorpay", "Production Deployment"],
+      },
     ],
   },
   {
@@ -241,7 +274,16 @@ export const projects = [
     tag: "Production (Canada) | Dec 2024 - Mar 2025",
     point:
       "Developed broker onboarding, multi-tenant access control, WEX API integration, and dashboards for fleet insights and fuel performance.",
-    stack: ["React.js", "Java", "Spring Boot", "Maven", "REST API", "Material UI", "WEX API", "Microservices"],
+    stack: [
+      "React.js",
+      "Java",
+      "Spring Boot",
+      "Maven",
+      "REST API",
+      "Material UI",
+      "WEX API",
+      "Microservices",
+    ],
     artifactUrl: null,
     artifactLabel: null,
     badge: "Production",
@@ -286,8 +328,14 @@ export const projects = [
     techGroups: [
       { title: "Frontend", items: ["React.js", "Material UI", "Dashboards", "Access Control"] },
       { title: "Backend", items: ["Java", "Spring Boot", "Maven", "REST APIs"] },
-      { title: "Integrations", items: ["WEX API", "Microservices", "Tenant Data", "Fleet Insights"] },
-      { title: "Operations", items: ["Broker Onboarding", "Reporting", "Secure Roles", "Production Support"] },
+      {
+        title: "Integrations",
+        items: ["WEX API", "Microservices", "Tenant Data", "Fleet Insights"],
+      },
+      {
+        title: "Operations",
+        items: ["Broker Onboarding", "Reporting", "Secure Roles", "Production Support"],
+      },
     ],
   },
   {
@@ -347,4 +395,6 @@ export const projects = [
   },
 ];
 
-export const projectsBySlug = Object.fromEntries(projects.map((project) => [project.slug, project]));
+export const projectsBySlug = Object.fromEntries(
+  projects.map((project) => [project.slug, project]),
+);

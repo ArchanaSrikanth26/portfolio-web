@@ -35,8 +35,8 @@ export function Experience() {
             >
               <div className="absolute left-2 sm:left-4 top-1.5 h-5 w-5 rounded-full border-2 border-white/50 bg-background shadow-glow" />
               <div className="text-xs font-mono text-primary uppercase tracking-widest">{it.when}</div>
-              <h3 className="mt-2 font-display text-2xl sm:text-3xl font-bold">{it.role}</h3>
-              <div className="text-sm text-muted-foreground mb-4">{it.org}</div>
+              <h3 className="mt-2 font-display text-xl sm:text-2xl font-bold">{it.role}</h3>
+              <div className="text-xs sm:text-sm text-muted-foreground mb-4">{it.org}</div>
               <ul className="space-y-2 text-muted-foreground">
                 {it.points.map((p) => (
                   <li key={p} className="flex gap-3">

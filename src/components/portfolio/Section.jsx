@@ -14,7 +14,7 @@ export function SectionHeading({ index, title, kicker }) {
         <span className="h-px w-10 bg-white/30" />
         <span className="uppercase tracking-[0.28em] text-muted-foreground">{kicker}</span>
       </div>
-      <h2 className="font-display text-4xl font-semibold tracking-tighter text-foreground sm:text-5xl lg:text-6xl">
+      <h2 className="font-display text-2xl font-semibold tracking-tighter text-foreground sm:text-3xl lg:text-4xl">
         {title}
       </h2>
     </motion.div>

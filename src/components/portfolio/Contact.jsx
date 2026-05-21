@@ -16,12 +16,12 @@ export function Contact() {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[400px] w-[400px] rounded-full bg-primary/10 blur-3xl" />
         <div className="relative">
           <div className="text-xs font-mono uppercase tracking-widest text-primary mb-5">05 — Contact</div>
-          <h2 className="font-display text-3xl font-semibold tracking-tighter sm:text-6xl lg:text-7xl">
+          <h2 className="font-display text-2xl font-semibold tracking-tighter sm:text-4xl lg:text-5xl">
             Let's build <span className="text-primary">something</span>
             <br />
             worth shipping.
           </h2>
-          <p className="mt-6 text-lg text-white max-w-xl mx-auto">
+          <p className="mt-6 text-base text-white max-w-xl mx-auto">
             Open to full-stack roles, freelance collaborations and ambitious side-projects.
           </p>
 
