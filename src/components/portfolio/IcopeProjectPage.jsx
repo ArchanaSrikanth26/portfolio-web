@@ -299,8 +299,12 @@ function GalleryCarousel({ title, badge, images, aspectClass = "aspect-[9/16]" }
         </div>
       </div>
 
-      <Carousel opts={{ align: "start", loop: true }} setApi={setCarouselApi} className="w-full">
-        <CarouselContent>
+      <Carousel
+        opts={{ align: "start", loop: true }}
+        setApi={setCarouselApi}
+        className="w-full touch-pan-y"
+      >
+        <CarouselContent className="touch-pan-y">
           {images.map((image, index) => (
             <CarouselItem key={image.alt} className="basis-full">
               <motion.div
@@ -327,8 +331,8 @@ function GalleryCarousel({ title, badge, images, aspectClass = "aspect-[9/16]" }
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="-left-2 h-8 w-8 border-white/10 bg-background/80 text-white shadow-card-soft hover:bg-white/10 sm:-left-3 sm:h-10 sm:w-10" />
-        <CarouselNext className="-right-2 h-8 w-8 border-white/10 bg-background/80 text-white shadow-card-soft hover:bg-white/10 sm:-right-3 sm:h-10 sm:w-10" />
+        <CarouselPrevious className="z-20 -left-2 h-8 w-8 border-white/10 bg-background/80 text-white shadow-card-soft hover:bg-white/10 sm:-left-3 sm:h-10 sm:w-10" />
+        <CarouselNext className="z-20 -right-2 h-8 w-8 border-white/10 bg-background/80 text-white shadow-card-soft hover:bg-white/10 sm:-right-3 sm:h-10 sm:w-10" />
       </Carousel>
     </div>
   );
@@ -498,16 +502,23 @@ export function IcopeProjectPage() {
                   images={logisticsImages}
                   aspectClass="aspect-[3/4] sm:aspect-[16/10]"
                 />
+              ) : project.slug === "icope-handbook-application" ? (
+                <GalleryCarousel
+                  title="ICOPE Screens"
+                  badge="ICOPE"
+                  images={images}
+                  aspectClass="aspect-[4/5] sm:aspect-[16/10]"
+                />
               ) : (
                 <div className="relative">
                   <Carousel
                     opts={{ align: "start", loop: true, slidesToScroll: 2 }}
                     setApi={setCarouselApi}
-                    className="w-full"
+                    className="w-full touch-pan-y"
                   >
-                    <CarouselContent>
+                    <CarouselContent className="touch-pan-y">
                       {images.map((image, index) => (
-                        <CarouselItem key={image.alt} className="basis-full md:basis-1/2">
+                        <CarouselItem key={image.alt} className="basis-full sm:basis-1/2">
                           <motion.div
                             variants={itemVariants}
                             className="group overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#040816] p-3 shadow-card-soft sm:rounded-[1.75rem] sm:p-4"
