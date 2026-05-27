@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { fileURLToPath } from "node:url";
 
 export default defineConfig({
-  base: "/portfolio-web/",
+  base: process.env.VERCEL ? "/" : "/portfolio-web/",
   plugins: [tailwindcss(), react()],
   resolve: {
     alias: {
