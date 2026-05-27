@@ -8,17 +8,15 @@ export const projects = [
     name: "ICOPE Handbook Application",
     tag: "WHO Project (AIIMS) | Mar 2026 - Present",
     point:
-      "Developed a mobile healthcare app with patient data management, questionnaire workflows, PDF reports, Tamil support, and an admin web panel.",
+      "Developed a bilingual healthcare app with guided assessments, PDF reports, and an admin panel.",
     stack: ["Flutter (Dart)", "React.js", "Node.js", "Google Maps API"],
     artifactUrl: icopeHandbookTamilPdf,
-    artifactLabel: "Click here to view my project UI",
+    artifactLabel: "View project reference",
     badge: "WHO Project",
-    summary:
-      "A bilingual healthcare experience designed to streamline structured assessments, reporting, and administrative review for field teams.",
+    summary: "A bilingual assessment platform for field teams and supervisors.",
     overview: [
-      "The ICOPE Handbook Application was designed to make complex healthcare assessments easier to run in the field while keeping the experience structured and reliable.",
-      "The mobile app captures patient information through guided steps, supports Tamil users naturally, and produces clean PDF summaries for review and handoff.",
-      "A companion admin interface helps supervisors inspect records and manage the operational side of the workflow with more clarity and control.",
+      "The ICOPE Handbook Application simplifies structured healthcare assessments for field use.",
+      "It supports Tamil users, generates clean PDF summaries, and keeps supervisor review organized.",
     ],
     snapshot: [
       ["Platform", "Flutter mobile app + React admin panel"],
@@ -27,28 +25,27 @@ export const projects = [
       ["Delivery", "Mobile workflow + web operations layer"],
     ],
     highlights: [
-      "Patient data capture and structured questionnaire flows",
-      "Tamil language support for accessibility and adoption",
-      "PDF report generation for quick clinical review",
-      "Admin web panel for monitoring and operational control",
-      "Google Maps integration for context-aware workflows",
+      "Guided patient assessment flows",
+      "Tamil-first interface support",
+      "PDF summaries for clinical handoff",
+      "Admin panel for record review",
     ],
     timeline: [
       {
-        title: "Discovery and workflow mapping",
-        text: "Defined the patient, caregiver, and admin journeys to simplify questionnaire flows and reduce screen fatigue for field users.",
+        title: "Workflow mapping",
+        text: "Mapped patient, caregiver, and admin journeys.",
       },
       {
-        title: "Core mobile implementation",
-        text: "Built the Flutter experience with structured forms, offline-friendly screens, secure data handling, and readable Tamil interfaces.",
+        title: "Mobile build",
+        text: "Built the Flutter flow with structured forms and Tamil support.",
       },
       {
-        title: "Admin web panel and reports",
-        text: "Delivered the React dashboard for reviewing submissions, generating reports, and tracking records across patient journeys.",
+        title: "Admin dashboard",
+        text: "Delivered the React review panel and report views.",
       },
       {
-        title: "Integration and release support",
-        text: "Connected backend services, location workflows, notification handling, and PDF exports for production readiness.",
+        title: "Integration",
+        text: "Connected backend services, location logic, and PDF export.",
       },
     ],
     techGroups: [
@@ -75,13 +72,13 @@ export const projects = [
     name: "Grocery Mobile Applications",
     tag: "Customer & Driver Apps | Nov 2025 - Feb 2026",
     point:
-      "Built cross-platform Customer and Driver apps in Flutter with push notifications, live location tracking, and route optimization.",
+      "Developed cross-platform customer and driver apps in Flutter with push notifications, live location tracking, and route optimization.",
     stack: ["Flutter (Dart)", "Node.js (Express)", "MongoDB", "Firebase", "Google Maps API", "JWT"],
     artifactUrl: groceryCustomerPdf,
-    artifactLabel: "Click here to view my project UI",
+    artifactLabel: "View project reference",
     badge: "Mobile Apps",
     summary:
-      "A consumer and logistics pair of mobile apps designed to make ordering, delivery, and route tracking feel fast and intuitive.",
+      "A paired consumer and logistics solution designed to streamline ordering, delivery, and route tracking.",
     overview: [
       "This project delivered two connected Flutter applications: one for customers to browse and order groceries, and one for drivers to manage delivery tasks.",
       "The product focused on practical day-to-day usability, with push notifications, live map tracking, route guidance, and a responsive interface for mobile users.",
@@ -147,7 +144,7 @@ export const projects = [
       "JWT",
     ],
     artifactUrl: saasAdminPdf,
-    artifactLabel: "Click here to view my project UI",
+    artifactLabel: "View project reference",
     badge: "SaaS Platform",
     summary:
       "A multi-vendor grocery operating system that brings super admin, vendor, and delivery management into one structured interface.",
@@ -202,7 +199,7 @@ export const projects = [
     name: "Logistics Management System",
     tag: "Production (Malaysia) | Apr 2025 - Jul 2025",
     point:
-      "Built a role-based logistics platform with vehicle management, AI invoice generation, live GPS tracking, and Dockerized deployment.",
+      "Developed a role-based logistics platform with vehicle management, AI invoice generation, live GPS tracking, and Dockerized deployment.",
     stack: [
       "Vite (React.js)",
       "Node.js (Express)",

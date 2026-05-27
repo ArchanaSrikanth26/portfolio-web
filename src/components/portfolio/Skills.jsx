@@ -139,54 +139,52 @@ export function Skills() {
 
   return (
     <Section id="skills">
-      <SectionHeading index="02" kicker="Skills" title="A toolkit for shipping real products." />
+      <SectionHeading index="02" kicker="Skills" title="A toolkit built for shipping reliable products." />
       <div className="relative">
         <Carousel opts={{ align: "start", loop: true }} setApi={setApi} className="w-full">
           <CarouselContent>
             {groups.map((g, i) => (
-              <CarouselItem key={g.title} className="pl-4 md:basis-full">
+              <CarouselItem key={g.title} className="pl-2 md:basis-full md:pl-4">
                 <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.6, delay: i * 0.04, ease: [0.22, 1, 0.36, 1] }}
-                  className="group relative overflow-hidden rounded-[1.75rem] border border-white/30 bg-card/90 backdrop-blur-md p-6 sm:p-8 shadow-card-soft"
+                  className="premium-card premium-card-hover group relative overflow-hidden p-4 sm:p-8"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-primary/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                  <div className="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-primary/10 blur-3xl opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                   <div className="relative">
-                    <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between mb-6">
+                    <div className="mb-5 flex flex-col gap-3 sm:mb-6 sm:flex-row sm:items-end sm:justify-between">
                       <div>
-                        <div className="text-[10px] font-mono uppercase tracking-[0.32em] text-primary/80 mb-2">
+                        <div className="mb-2 text-[9px] font-mono uppercase tracking-[0.28em] text-primary/80 sm:text-[10px] sm:tracking-[0.32em]">
                           Category {String(i + 1).padStart(2, "0")}
                         </div>
-                        <h3 className="font-display text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
+                        <h3 className="font-display text-xl font-semibold tracking-tight text-white sm:text-3xl">
                           {g.title}
                         </h3>
                       </div>
-                      <div className="rounded-full border border-white/30 bg-background/60 px-4 py-2 text-xs font-mono text-white/90">
-                        Use Next / Prev to browse
-                      </div>
+                    
                     </div>
-                    <div className="mb-6 h-px w-full bg-white/60" />
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div className="mb-5 h-px w-full bg-white/12 sm:mb-6" />
+                    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                       {g.items.map((s) => (
                         <div
                           key={s}
-                          className="flex items-center gap-3 rounded-2xl border border-white/20 bg-secondary/50 px-4 py-3 text-xs font-medium text-secondary-foreground/90 transition-colors hover:border-primary hover:text-primary sm:text-sm"
+                          className="premium-chip flex items-center gap-2.5 rounded-2xl px-3 py-2.5 text-[11px] font-medium sm:gap-3 sm:px-4 sm:py-3 sm:text-sm"
                         >
-                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary/20 bg-primary/8">
+                          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-primary/20 bg-primary/10 sm:h-8 sm:w-8">
                             <SkillIcon skill={s} />
                           </span>
                           {s}
                         </div>
                       ))}
                     </div>
-                    <div className="mt-8 flex justify-end">
+                    <div className="mt-6 flex justify-end sm:mt-8">
                       <button
                         type="button"
                         onClick={() => api?.scrollNext()}
-                        className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-card-soft transition-colors hover:bg-primary/90"
+                        className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-[13px] font-semibold text-primary-foreground shadow-card-soft transition-all duration-300 hover:scale-[1.02] hover:bg-primary/90 sm:px-6 sm:py-3 sm:text-sm"
                       >
                         Next
                       </button>

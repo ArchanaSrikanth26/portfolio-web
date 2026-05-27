@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Award, CalendarDays, GraduationCap, School, Sparkles } from "lucide-react";
 import { Section, SectionHeading } from "./Section";
 
 export function Education() {
@@ -10,22 +11,38 @@ export function Education() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-60px" }}
         transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-        className="max-w-3xl rounded-3xl border border-border glass p-6 sm:p-8 shadow-card-soft"
+        className="premium-card premium-card-hover max-w-3xl p-6 sm:p-8"
       >
-        <div className="text-xs font-mono uppercase tracking-widest text-primary">2020 — 2024</div>
-        <h3 className="mt-3 font-display text-xl sm:text-2xl font-bold tracking-tight">
-          B.Tech, AI & Data Science
-        </h3>
-        <div className="mt-2 text-xs sm:text-sm text-muted-foreground">
-          Arjun College of Technology · CGPA 8.4
+        <div className="flex flex-wrap items-center gap-2 text-xs font-mono uppercase tracking-[0.28em] text-primary/90">
+          <CalendarDays className="h-3.5 w-3.5" />
+          2020 - 2024
         </div>
-        <p className="mt-5 text-sm text-muted-foreground leading-relaxed">
-          Specialized in Artificial Intelligence and Data Science with a strong systems foundation.
-        </p>
-        <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-          Certified in Full Stack Web Development (Udemy, Naan Mudhalvan) and MongoDB CRUD
-          (MongoDB University).
-        </p>
+
+        <div className="mt-4 flex items-start gap-3">
+          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-primary/15 bg-primary/10">
+            <GraduationCap className="h-5 w-5 text-primary" />
+          </div>
+          <div>
+            <h3 className="font-display text-xl font-semibold tracking-tight text-white sm:text-2xl">
+              B.Tech, AI & Data Science
+            </h3>
+            <div className="mt-1 flex items-center gap-2 text-sm text-white/75">
+              <School className="h-3.5 w-3.5 text-primary" />
+              Arjun College of Technology · CGPA 8.4
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-5 grid gap-3 sm:grid-cols-2">
+          <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm leading-6 text-white/80">
+            <Sparkles className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+            <span>Focused on Artificial Intelligence and Data Science with a strong systems foundation.</span>
+          </div>
+          <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm leading-6 text-white/80">
+            <Award className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+            <span>Certified in Full Stack Web Development and MongoDB CRUD.</span>
+          </div>
+        </div>
       </motion.div>
     </Section>
   );

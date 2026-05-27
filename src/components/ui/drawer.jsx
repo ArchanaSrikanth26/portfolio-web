@@ -6,7 +6,7 @@ Drawer.displayName = "Drawer";
 const DrawerTrigger = DrawerPrimitive.Trigger;
 const DrawerPortal = DrawerPrimitive.Portal;
 const DrawerClose = DrawerPrimitive.Close;
-const DrawerOverlay = React.forwardRef(({ className, ...props }, ref) => (<DrawerPrimitive.Overlay ref={ref} className={cn("fixed inset-0 z-50 bg-[#242124]/80", className)} {...props}/>));
+const DrawerOverlay = React.forwardRef(({ className, ...props }, ref) => (<DrawerPrimitive.Overlay ref={ref} className={cn("fixed inset-0 z-50 bg-background/80", className)} {...props}/>));
 DrawerOverlay.displayName = DrawerPrimitive.Overlay.displayName;
 const DrawerContent = React.forwardRef(({ className, children, ...props }, ref) => (<DrawerPortal>
     <DrawerOverlay />

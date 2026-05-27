@@ -5,7 +5,7 @@ import { buttonVariants } from "@/components/ui/button";
 const AlertDialog = AlertDialogPrimitive.Root;
 const AlertDialogTrigger = AlertDialogPrimitive.Trigger;
 const AlertDialogPortal = AlertDialogPrimitive.Portal;
-const AlertDialogOverlay = React.forwardRef(({ className, ...props }, ref) => (<AlertDialogPrimitive.Overlay className={cn("fixed inset-0 z-50 bg-[#242124]/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0", className)} {...props} ref={ref}/>));
+const AlertDialogOverlay = React.forwardRef(({ className, ...props }, ref) => (<AlertDialogPrimitive.Overlay className={cn("fixed inset-0 z-50 bg-background/80 data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0", className)} {...props} ref={ref}/>));
 AlertDialogOverlay.displayName = AlertDialogPrimitive.Overlay.displayName;
 const AlertDialogContent = React.forwardRef(({ className, ...props }, ref) => (<AlertDialogPortal>
     <AlertDialogOverlay />
